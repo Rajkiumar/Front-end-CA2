@@ -2,18 +2,18 @@ const namedisplay = document.getElementById("nickname");
 namedisplay.innerHTML = localStorage.getItem("nickname");
 
 const cards = document.querySelectorAll('.memory-card');
-const matchedPairsDisplay = document.querySelector('.move-count'); // Display for matched pairs
-const timerDisplay = document.querySelector('.timer'); // Timer display
+const matchedPairsDisplay = document.querySelector('.move-count');
+const timerDisplay = document.querySelector('.timer');
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let matchedPairs = 0; // Count for matched pairs
+let matchedPairs = 0;
 let timerStarted = false;
 let startTime;
-let gameDuration = 40 * 1000; // 40 seconds in milliseconds
+let gameDuration = 30 * 1000;
 let intervalId;
-let isFirstClick = true; // Flag to check for the first click
+let isFirstClick = true;
 
 const successSound = document.getElementById("success");
 const failSound = document.getElementById("fail");
@@ -68,7 +68,7 @@ function checkForMatch() {
             stopGameTimer();
             playDoneAllSound();
             setTimeout(() => {
-                window.location.href = 'cong.html'; // Redirect to conc.html if all pairs are matched
+                window.location.href = 'cong.html';
                 localStorage.setItem("easyscore", matchedPairs);
             }, 2000);
         }
@@ -93,7 +93,7 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
 
-        playFailSound(); // Play 'fail' audio for mismatched cards
+        playFailSound();
 
         resetBoard();
     }, 1500);
@@ -115,7 +115,7 @@ function startGameTimer() {
             playDoneAllSound();
             setTimeout(() => {
                 window.location.href = 'end.html';
-                localStorage.setItem("easyscore", matchedPairs); // Save matched pairs as score
+                localStorage.setItem("easyscore", matchedPairs);
             }, 2000);
             return;
         }
@@ -142,11 +142,11 @@ function stopGameTimer() {
 })();
 
 function handleCardClick() {
-    flipCard.call(this); // Maintain the context of 'this' for flipCard function
+    flipCard.call(this);
 
     if (isFirstClick) {
-        startGameTimer(); // Start the timer on the first click
-        isFirstClick = false; // Update the flag to indicate the first click has occurred
+        startGameTimer();
+        isFirstClick = false;
     }
 }
 

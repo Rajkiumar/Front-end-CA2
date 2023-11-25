@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .time-count{
@@ -23,7 +23,7 @@ body{
     margin: 5px;
     background-color: #FFDBE2;
     border-radius: 10px; 
-    margin-left: 200px;
+    margin-left: 70px;
     font-size: 30px;
 }
 
@@ -39,7 +39,7 @@ body{
 
 
 h1{
-    font-size: 70px;
+    font-size: 50px;
     margin-bottom: 50px;
 }
 
@@ -105,8 +105,8 @@ h1{
 #namedisplay{
     position: absolute;
     font-size: 30px;
-    left: 150px;
-    top: 200px;
+    left: 80px;
+    top: 160px;
 }
 
 .memory-game{
@@ -208,8 +208,8 @@ h1{
 
     #namedisplay{
         font-size: 20px;
-        margin-top: -50px;
-        margin-left: -125px;
+        margin-top: 1px;
+        margin-left: 10px;
     }
 
     button {

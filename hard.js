@@ -2,18 +2,18 @@ const namedisplay = document.getElementById("nickname");
 namedisplay.innerHTML = localStorage.getItem("nickname");
 
 const cards = document.querySelectorAll('.memory-card');
-const matchedPairsDisplay = document.querySelector('.move-count'); // Display for matched pairs
-const timerDisplay = document.querySelector('.timer'); // Timer display
+const matchedPairsDisplay = document.querySelector('.move-count');
+const timerDisplay = document.querySelector('.timer');
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let matchedPairs = 0; // Count for matched pairs
+let matchedPairs = 0;
 let timerStarted = false;
 let startTime;
-let gameDuration = 40 * 1000; // 40 seconds in milliseconds
+let gameDuration = 60 * 1000;
 let intervalId;
-let isFirstClick = true; // Flag to check for the first click
+let isFirstClick = true;
 
 const successSound = document.getElementById("success");
 const failSound = document.getElementById("fail");
@@ -60,17 +60,17 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
 
     if (isMatch) {
-        playSuccessSound(); // Play 'success' audio for matched cards
-        matchedPairs++; // Increment the matched pairs count
+        playSuccessSound();
+        matchedPairs++;
         updateMatchedPairsDisplay();
 
-        if (matchedPairs === cards.length / 2) { // Check if all pairs are matched
+        if (matchedPairs === cards.length / 2) { 
             stopGameTimer();
-            playDoneAllSound(); // Play 'doneall' audio on game completion
+            playDoneAllSound();
             setTimeout(() => {
-                window.location.href = 'end.html'; // Redirect to end.html after a delay
-                localStorage.setItem("easyscore", matchedPairs); // Save matched pairs as score
-            }, 2000); // Adjust the delay time as needed
+                window.location.href = 'end.html';
+                localStorage.setItem("easyscore", matchedPairs);
+            }, 2000);
         }
     }
 }
@@ -93,7 +93,7 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
 
-        playFailSound(); // Play 'fail' audio for mismatched cards
+        playFailSound();
 
         resetBoard();
     }, 1500);
@@ -115,7 +115,7 @@ function startGameTimer() {
             playDoneAllSound();
             setTimeout(() => {
                 window.location.href = 'end.html';
-                localStorage.setItem("easyscore", matchedPairs); // Save matched pairs as score
+                localStorage.setItem("easyscore", matchedPairs);
             }, 2000);
             return;
         }
@@ -142,11 +142,11 @@ function stopGameTimer() {
 })();
 
 function handleCardClick() {
-    flipCard.call(this); // Maintain the context of 'this' for flipCard function
+    flipCard.call(this);
 
     if (isFirstClick) {
-        startGameTimer(); // Start the timer on the first click
-        isFirstClick = false; // Update the flag to indicate the first click has occurred
+        startGameTimer();
+        isFirstClick = false;
     }
 }
 

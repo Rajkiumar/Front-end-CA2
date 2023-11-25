@@ -12,7 +12,8 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .time-count{
@@ -23,7 +24,7 @@ body{
     margin: 5px;
     background-color: #FFDBE2;
     border-radius: 10px; 
-    margin-left: 200px;
+    margin-left: 70px;
     font-size: 30px;
 }
 
@@ -39,8 +40,8 @@ body{
 
 
 h1{
-    font-size: 70px;
-    margin-bottom: 100px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .memory-game {
@@ -70,8 +71,8 @@ h1{
 }
   
 .front-face, .back-face {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     margin: 10px;
     position: absolute;
     border-radius: 10px;
@@ -96,17 +97,21 @@ h1{
 
 
 .retu{
-    margin-left: 1700px;
-    width: 70px;
-    height: 70px;
-    margin-top: 200px;
+    margin-left: 650px;
+    width: 35px;
+    height: 35px;
+    margin-top: 90px;
 }
 
 #namedisplay{
     position: absolute;
     font-size: 30px;
-    left: 150px;
-    top: 200px;
+    left: 90px;
+    top: 160px;
+}
+
+.memory-game{
+    padding-right: -100px;
 }
 
 @media only screen and (max-width: 744px) {
@@ -128,9 +133,26 @@ h1{
         font-size: 30px;
         left: 0%;
     }
+    .time-count{
+        width: 50px;
+        letter-spacing: 2px;
+        height: 29px;
+        width: 100px;
+        margin: 5px;
+        background-color: #FFDBE2;
+        border-radius: 10px; 
+        margin-left: 10px;
+        font-size: 30px;
+        font-size: 20px;
+    }
+    .moves {
+        font-size: 30px;
+        margin-left: 100px; 
+        margin-bottom: 100px;
+    }
 }
 
-@media only screen and (max-width: 744px) {
+@media only screen and (max-width: 2000px) {
     body{
         background-image: url(./asssit/background.jpg);
         background-size: cover;
@@ -162,7 +184,7 @@ h1{
     }
     .moves {
         font-size: 30px;
-        margin-left: 100px; 
+        margin-left: 550px; 
         margin-bottom: 100px;
     }
 }
@@ -187,6 +209,8 @@ h1{
 
     #namedisplay{
         font-size: 20px;
+        margin-top: 1px;
+        margin-left: 10px;
     }
 
     button {
@@ -273,6 +297,6 @@ h1{
         margin-left: 250px;
         width: 35px;
         height: 35px;
-        margin-top: 125px;
+        margin-top: 100px;
     }
 }
