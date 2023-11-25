@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentrate</title>
+    <link rel="stylesheet" type="icon" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1>Concentrate</h1>
+        </header>
+    
+        <section class="game-start">
+          <div id="start" class="modal">
+            <div class="modal-content">
+              <p>Choose the game mode</p>
+              <div class="modal-content-options"><br>
+                <button class="btnplay" id="easy" onclick="location.href='easy.html'">Easy</button><br>
+                <button class="btnplay" id="medium" onclick="location.href='Medium.html'">Medium</button><br>
+                <button class="btnplay" id="hard" onclick="location.href='hard.html'">Hard</button><br>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="popup" id="popup-0">
+          <div class="overlay"></div>
+          <div class="content">
+              <div class="close-btn" onclick="togglePopup()">&times;</div>
+              <h1 id="instru"><b>Instruction</b></h1>
+              <ul>
+                <b>1. Click on the tile to flip it over and see the image behind it. <br>
+                2. Find the same image behind the tile within given time to clear the game. <br>
+                3. When Finished you can restart button the game again and can change your difficulty. <br></b>
+              </ul>
+          </div>
+      </div>
+  
+      <button id="inst" onclick="togglePopup()">Instruction</button>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

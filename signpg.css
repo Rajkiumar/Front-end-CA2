@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@1,8..60&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./asssit/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family:'Source Serif 4', serif;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+h1{
+    color: solid black;
+    font-size: 70px;
+    margin-bottom: 70px;
+}
+
+p{
+    font-size: 40px;
+}
+
+#name{
+    width: 13%;
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+#nickname{
+    width: 16.5%;
+    margin-bottom: 100px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.btnplay{
+    width: 170px;
+    height: 50px;
+    padding: 0;
+    font-size: 30px;
+    color: white;
+}
+
+button{
+    background-color: #F18701;
+    border-radius: 10px;
+    border-color: #F18701;
+    box-shadow: 6px 5px darkgray;
+}
+
+@media only screen and (max-width: 744px) {
+    body{
+        background-image: url(./asssit/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family:'Source Serif 4', serif;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 30px;
+        left: 0%;
+    }
+    #name{
+        width: 300px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    #nickname{
+        width: 360px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    body{
+        background-image: url(./asssit/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family:'Source Serif 4', serif;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 30px;
+        left: 0%;
+    }
+    #name{
+        width: 300px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    #nickname{
+        width: 360px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-image: url(./asssit/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family:'Source Serif 4', serif;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 30px;
+        left: 0%;
+    }
+    #name{
+        width: 300px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    #nickname{
+        width: 360px;
+        font-size: 25px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    #name{
+        width: 9.5em;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    
+    #nickname{
+        width: 12em;
+        margin-bottom: 100px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    p{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}

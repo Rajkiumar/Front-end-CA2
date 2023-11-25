@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./asssit/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+h1{
+    color: solid black;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.btnplay{
+    width: 170px;
+    height: 70px;
+    font-size: 30px;
+    margin-bottom: 29px;
+    box-shadow: 6px 5px darkgray;
+    border-radius: 8px;
+    color: white;
+}
+
+button:nth-of-type(1) {
+    background-color: #78C516;
+    border-color: #78C516;
+}
+
+button:nth-of-type(2) {
+    background-color: #2D8BC1;
+    border-color: #2D8BC1;
+}
+
+button:nth-of-type(3) {
+    background-color: #C15CFF;
+    border-color: #C15CFF;
+}
+
+.overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: none;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 6px 5px black;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.close-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 50px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+#inst{
+    width: 500px;
+    height: 100px;
+    font-size: 60px;
+    margin-bottom: 100px;
+    box-shadow: 6px 5px darkgray;
+    border-radius: 8px;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Playpen Sans', cursive;
+    margin-bottom: 50px;
+}
+
+ul{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(75, 75, 75);
+    text-align: center;
+}
+
+@media only screen and (max-width: 744px) {
+    body{
+        background-image: url(./asssit/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Playpen Sans', cursive;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 30px;
+        left: 0%;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    body{
+        background-image: url(./asssit/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Playpen Sans', cursive;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 30px;
+        left: 0%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-image: url(./asssit/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Playpen Sans', cursive;
+        letter-spacing: 1px;
+        margin-top: 50px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    button {
+        height: 10px;
+        width: 10px;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .btnplay{
+        margin-bottom: 25px;
+    }
+
+    p{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    h1{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    .content{
+        width: 90%;
+        font-size: 16px;
+    }
+    #inst{
+        width: 300px;
+        height: 70px;
+        font-size: 50px;
+        margin-bottom: 100px;
+        box-shadow: 6px 5px darkgray;
+        border-radius: 8px;
+        color: white;
+    }
+    ul{
+        font-size: 18px;
+    }
+    .close-btn{
+        font-size: 25px;
+    }
+}
