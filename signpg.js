@@ -13,6 +13,6 @@ play.addEventListener("click",(e)=> {
     }
     else{
         localStorage.setItem("nickname",nameval)
-        window.location.href="./index.html"
+        window.location.href="./signpg.html"
     }
 });
